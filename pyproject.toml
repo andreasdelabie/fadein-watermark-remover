@@ -4,6 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fadein-watermark-remover"
+description = "Remove Fade In watermarks from PDF files."
 version = "0.1.0"
 authors = [
     {name = "Andreas Delabie"},
@@ -13,8 +14,7 @@ dependencies = [
     "pymupdf",
     "elevate"
 ]
+readme = "README.md"
 
 [project.scripts]
 fadein-watermark-remover = "fadein_watermark_remover.main:main"
-fadein-watermark-remover-add-shortcut = "fadein_watermark_remover.shortcut:add"
-fadein-watermark-remover-delete-shortcut = "fadein_watermark_remover.shortcut:remove"
