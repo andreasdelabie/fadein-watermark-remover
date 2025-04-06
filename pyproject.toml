@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fadein-watermark-remover"
+version = "0.1.0"
+authors = [
+    {name = "Andreas Delabie"},
+    {email = "andreas.delabie@gmail.com"}
+]
+dependencies = [
+    "pymupdf",
+    "elevate"
+]
+
+[project.scripts]
+fadein-watermark-remover = "fadein_watermark_remover.main:main"
+fadein-watermark-remover-add-shortcut = "fadein_watermark_remover.shortcut:add"
+fadein-watermark-remover-delete-shortcut = "fadein_watermark_remover.shortcut:remove"
