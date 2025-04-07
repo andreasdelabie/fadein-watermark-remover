@@ -1,4 +1,4 @@
-import sys, pymupdf, os
+import sys, pymupdf
 
 def main():
     if len(sys.argv) > 1:
